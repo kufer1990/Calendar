@@ -1,19 +1,21 @@
 package com.example.calendarproject.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 @Entity
-@Table(name="day")
-public class Day {
+public class OneOfManyDays {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id", nullable = false)
     private Long id;
-    private Date date;
+    @JsonFormat(pattern="yyyy/MM/dd")
+    private LocalDate currentday = LocalDate.now();
+
+    private String event;
     @Transient
     ArrayList<String> list;
 
@@ -26,13 +28,10 @@ public class Day {
         this.id = id;
     }
 
-    public Date getDate() {
-        return date;
+    public LocalDate getDate() {
+        return currentday;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
-    }
 
     public ArrayList<String> getList() {
         return list;
@@ -40,5 +39,13 @@ public class Day {
 
     public void addEvent(String event){
         list.add(event);
+    }
+
+    public String getEvent() {
+        return event;
+    }
+
+    public void setEvent(String event) {
+        this.event = event;
     }
 }
