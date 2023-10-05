@@ -1,4 +1,7 @@
 package com.example.calendarproject.service;
 
-public interface CalendarRepository {
+import com.example.calendarproject.model.OneOfManyDays;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CalendarRepository extends JpaRepository<OneOfManyDays, Long> {
 }

@@ -1,0 +1,15 @@
+2023-10-05 15:36:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]day (id bigint not null, date date, event varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table day (id bigint not null, date date, event varchar(255), primary key (id)) [42001-214]
+2023-10-05 15:37:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]day (id bigint not null, date date, event varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table day (id bigint not null, date date, event varchar(255), primary key (id)) [42001-214]
+2023-10-05 15:39:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]day (id bigint not null, currentday date, event varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table day (id bigint not null, currentday date, event varchar(255), primary key (id)) [42001-214]
+2023-10-05 15:40:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]day (id bigint not null, currentday date, event varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table day (id bigint not null, currentday date, event varchar(255), primary key (id)) [42001-214]
+2023-10-05 15:42:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]day (id bigint not null, currentday date, event varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table day (id bigint not null, currentday date, event varchar(255), primary key (id)) [42001-214]

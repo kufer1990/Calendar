@@ -19,6 +19,12 @@ public class OneOfManyDays {
     @Transient
     ArrayList<String> list;
 
+    public OneOfManyDays() {
+    }
+
+    public OneOfManyDays(String event) {
+        this.event = event;
+    }
 
     public Long getId() {
         return id;
